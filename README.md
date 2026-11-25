@@ -14,6 +14,10 @@ dashboard built for non-technical operations staff.
 **Stack:** Python 3.12+ · Django 5 + Django REST Framework · SQLite (Postgres via `DATABASE_URL`) ·
 Playwright · React 18 + TypeScript + Vite + Recharts.
 
+![Dashboard for Azzurro Pod Hotel Darling Harbour, last 12 months: average rating trend, positive vs negative reviews per month, and complaints vs praise per topic, led by rooms & bathrooms and cleanliness](docs/dashboard.png)
+
+![Review feed: filters for search, overall score, topic and complaint/praise; each review shows its score, Liked and Disliked text, and topic tags](docs/review-feed.png)
+
 ---
 
 ## Contents
