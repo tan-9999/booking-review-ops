@@ -1,0 +1,6 @@
+[
+  { "slug": "property-1", "name": "Property One", "url": "https://www.booking.com/hotel/au/olympic-paddington.html" },
+  { "slug": "property-2", "name": "Property Two", "url": "https://www.booking.com/hotel/au/venus-potts-point-sydney.html" },
+  { "slug": "property-3", "name": "Property Three", "url": "https://www.booking.com/hotel/au/venus-surry-hills.html" },
+  { "slug": "property-4", "name": "Property Four", "url": "https://www.booking.com/hotel/au/chateau-de-venus.html" }
+]
