@@ -74,8 +74,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LANGUAGE_CODE = "en-us"
-# "This week" is computed in this zone (ops team's local time).
-TIME_ZONE = os.environ.get("APP_TIME_ZONE", "Asia/Kolkata")
+# "This week" is computed in the properties' local time (all four are in Sydney).
+TIME_ZONE = os.environ.get("APP_TIME_ZONE", "Australia/Sydney")
 USE_I18N = True
 USE_TZ = True
 

@@ -84,7 +84,11 @@ class ParsedReview:
         return errors
 
     def fingerprint(self, property_slug: str) -> str:
-        """Identity of a review when Booking gives us no id."""
+        """Identity of a review. A stable id wins; otherwise normalized content."""
+        if self.external_id:
+            # With an id, content is not identity: two score-only "Good" reviews on
+            # the same day are different reviews (seen when importing name-less sample data).
+            return _sha256(property_slug, "id", self.external_id)
         return _sha256(
             property_slug,
             _key(self.reviewer_name),
