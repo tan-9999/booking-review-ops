@@ -60,6 +60,9 @@ npm run dev                      # open http://localhost:5173
 ```
 
 Vite forwards `/api` to Django, so no CORS setup is needed in development.
+If Django runs on another port, point the proxy at it:
+`API_TARGET=http://127.0.0.1:8001 npm run dev` (Git Bash / macOS / Linux) or
+`set API_TARGET=http://127.0.0.1:8001 && npm run dev` (cmd).
 The admin is at http://127.0.0.1:8000/admin/ (`python manage.py createsuperuser` first).
 
 > "This week" is calculated from today's date. The sample data ends on 25 Nov 2026,
